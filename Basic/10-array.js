@@ -79,22 +79,45 @@ console.log(myArray)
 
 console.log(myArray.length)
 
-// clear
+// clear  // limpiar
 
 myArray = []
 myArray.length = 0 // alternativa
 console.log(myArray)
 
-// slice
+// slice 
+
+// El método slice se utiliza para crear una nueva 
+// copia de una sección de un array, especificando las posiciones 
+// de inicio y fin para la extracción.
+// Por ejemplo, al llamar a arr.slice(1, 3), se 
+// crearía un nuevo array con los elementos en las posiciones 1 y 2 
+// de arr, sin modificar el array original.
+
+// slice(1, 3): El número 1 indica el índice 1, y el 3 indica el índice 3, 
+//el cual es excluido de la copia. 
+
 
 myArray = ["Brais", "Moure", "mouredev", 37, true]
 
 let myNewArray = myArray.slice(1, 3)
 
 console.log(myArray)
-console.log(myNewArray)
+console.log(myNewArray) // Array [ "Moure", "mouredev" ]
 
 // splice
+
+// Por otro lado, el método splice se utiliza para modificar el 
+// contenido de un array al eliminar, reemplazar o agregar elementos, 
+// especificando la posición de inicio y la cantidad de elementos a afectar.
+// Por ejemplo, al llamar a arr.splice(1, 2, "nuevo"), se eliminarían
+//  2 elementos a partir de la posición 1 en arr y se reemplazarían 
+//  por el elemento "nuevo", modificando el array original.
+
+//  myArray.splice(1, 3): 
+// El número 1 indica el elemento en el índice 1 del array, 
+// y el 3 indica el número de elementos que se deben eliminar
+//  a partir del índice 1, inclusive. 
 
 myArray.splice(1, 3)
 console.log(myArray)
