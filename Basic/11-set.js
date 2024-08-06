@@ -53,7 +53,7 @@ console.log(myArray)
 mySet = new Set(myArray)
 console.log(mySet)
 
-// No admite duplicados
+// No admite duplicados y tiene que ser exacto. No trabaja con indice, otra diferencia importante de los arrays
 
 mySet.add("braismoure@mouredev.com")
 mySet.add("braismoure@mouredev.com")
