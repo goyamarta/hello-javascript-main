@@ -220,3 +220,21 @@ function invertirPalabras(cadena) {
   console.log(fraseInvertida); // Imprimirá: "¿estás cómo mundo, Hola"
   
 // 10. Crea una función que calcule el factorial de un número dado
+function factorial(numero) {
+  // Caso base: el factorial de 0 y 1 es 1
+  if (numero === 0 || numero === 1) {
+    return 1;
+  }
+
+  // Caso recursivo: el factorial de un número es n * factorial(n-1)
+  return numero * factorial(numero - 1);
+}
+
+// Ejemplo de uso:
+const resultado10 = factorial(5);
+console.log(resultado10); // Imprimirá 120 (5 * 4 * 3 * 2 * 1)
+
+
+
+
+
