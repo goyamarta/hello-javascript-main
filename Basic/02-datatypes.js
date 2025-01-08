@@ -19,14 +19,14 @@ let height = 1.77 // Decimal
 let isTeacher = true
 let isStudent = false
 
-// Undefined
+// Undefined - la variable está definida pero no tiene valor, y se le dara despues
 let undefinedValue
 console.log(undefinedValue)
 
-// Null
+// Null - la variable está definida y tiene un valor nulo
 let nullValue = null
 
-// Symbol
+// Symbol - tiene un valor único no repetible
 
 let mySymbol = Symbol("mysymbol")
 
